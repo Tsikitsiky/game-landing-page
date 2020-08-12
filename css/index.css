@@ -1,0 +1,26 @@
+body {
+  font-family: "bebas-neue";
+  position: relative; }
+
+span {
+  visibility: hidden; }
+
+h2,
+h3 {
+  text-transform: uppercase; }
+
+body > header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+#language {
+  border: none; }
+
+.feature-container {
+  background-image: url("../img/angelina-andreas-jungleruins.png"); }
+
+.feature {
+  text-align: center;
+  color: #ffffff; }

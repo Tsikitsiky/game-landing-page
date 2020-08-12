@@ -1,0 +1,16 @@
+@import "variables";
+
+.feature-container {
+    background-image: image('angelina-andreas-jungleruins.png');
+    
+}
+
+.feature {
+    text-align: center;
+    color: $text-colour;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 633px;
+}
+

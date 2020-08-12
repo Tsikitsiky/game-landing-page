@@ -1,0 +1,15 @@
+@import "./variables";
+body {
+    font-family: $font-base;
+    position: relative;
+    //color: $text-colour;
+}
+
+span {
+    visibility: hidden;
+}
+
+h2,
+h3 {
+    text-transform: uppercase;
+}

@@ -4,38 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game landing page</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header>
         <h1>logo sos</h1>
-        <select name="language" id="language">
-            <option value="english">ENG</option>
-            <option value="russia">RUS</option>
-            <option value="french">FRS</option>
-            <option value="deutch">DEU</option>
-        </select>
+        <form action="." method="GET">
+            <label for="lang_dropdown">Language</label>
+            <select name="lang" id="lang_dropdown">
+              <option lang="en" value="en" label="English">
+              <option lang="ru" value="ru" label="русский">
+              <option lang="fr" value="fr" label="Français">
+              <option lang="de" value="de" label="Deutsch">
+            </select>
+            <button type="submit">Save</button>
+          </form>
         <label for="menu"><span>menu</span></label>
         <input type="checkbox">
     </header>
     <main>
-        <section class="masthead">
-            <header class="masthed-heading">
-                <h2>survive at all costs</h2>
-                <h3>experience new social battle royal game</h3>
-            </header>
-            <p><a class="buy-now-link" href="/">Buy now on Steam | $14.99</a></p>
-            <footer class="masthead-foot">
-                <nav>
-                    <a class="the-story-link" href="/">THE STORY</a>
-                </nav>
-                <nav>
-                    <a href="/"></a>
-                    <a href="/"></a>
-                    <a href="/"></a>
-                    <a href="/"></a>
-                </nav>
-            </footer>
-        </section>
+        <div class="feature-container">
+            <section class="feature">
+                <header class="feature-heading">
+                    <h2>survive at all costs</h2>
+                    <h3>experience new social battle royal game</h3>
+                </header>
+                <p><a class="buy-now-link" href="/">Buy now on Steam | $14.99</a></p>
+                <footer class="feature-foot">
+                    <nav>
+                        <a class="the-story-link" href="/">THE STORY</a>
+                    </nav>
+                    <nav>
+                        <a href="/"></a>
+                        <a href="/"></a>
+                        <a href="/"></a>
+                        <a href="/"></a>
+                    </nav>
+                </footer>
+            </section>
+        </div>
+        <div class="about-container">
+            <section class="about">
+                <header>
+                    <h2>social battle royal game</h2>
+                    <h3>what is sos?</h3>
+                </header>
+                <p>
+Each round, you and 15 other contestants compete to
+escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+solo or form friendships with others to escape? 
+                </p>
+                <p>
+Making the right decisions could be the
+difference between life and death.
+                </p>
+            </section>
+        </div>
     </main>
     <footer></footer>
 </body>
