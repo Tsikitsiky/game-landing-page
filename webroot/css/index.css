@@ -1,6 +1,8 @@
 body {
-  font-family: "bebas-neue";
-  position: relative; }
+  font-family: "bebas-neue", Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: #1a1917;
+  color: #ffffff; }
 
 span {
   visibility: hidden; }
