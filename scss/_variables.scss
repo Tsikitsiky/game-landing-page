@@ -1,7 +1,8 @@
 $font-base: 'bebas-neue';
+$font-fallbacks: Arial, Helvetica, sans-serif;
 $text-colour: #ffffff;
 $break-point: 1140px;
-
+$colour-brand-black: #1a1917;
 
 @function image($filename) {
     @return url('../img/#{$filename}');

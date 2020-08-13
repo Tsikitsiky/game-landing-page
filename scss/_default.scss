@@ -1,8 +1,9 @@
 @import "./variables";
 body {
-    font-family: $font-base;
+    font-family: $font-base, $font-fallbacks;
     position: relative;
-    //color: $text-colour;
+    background-color: $colour-brand-black;
+    color: $text-colour;
 }
 
 span {
