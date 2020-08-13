@@ -1,11 +1,11 @@
 
 
-.feature-container {
+.masthead-container {
     background-image: image('angelina-andreas-jungleruins.png');
-    
+    object-fit: contain;
 }
 
-.feature {
+.masthead {
     text-align: center;
     color: $text-colour;
     display: flex;
