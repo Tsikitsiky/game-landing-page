@@ -13,8 +13,6 @@ span {
 h2,
 h3 {
     text-transform: uppercase;
-}
-
-h3 {
-    order: 1;
+    font-family: $font-header;
+    font-weight: 400;
 }
