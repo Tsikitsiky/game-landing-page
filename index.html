@@ -9,19 +9,19 @@
 <body>
     <header>
         <div class="header-container">
-            <h1>logo sos</h1>
+            <h1><a href="/"><span>logo</span></a></h1>
             <form action="." method="GET">
-                <label for="lang_dropdown">Language</label>
+                <!--<label for="lang_dropdown">Language</label>-->
                 <select name="lang" id="lang_dropdown">
                 <option lang="en" value="en" label="English">
                 <option lang="ru" value="ru" label="русский">
                 <option lang="fr" value="fr" label="Français">
                 <option lang="de" value="de" label="Deutsch">
                 </select>
-                <button type="submit">Save</button>
-            </form>
+                <!--<button type="submit">Save</button>-->
             <label for="menu"><span>menu</span></label>
-            <input type="checkbox">
+            <input type="checkbox" id="menu">
+        </form>
         </div>
     </header>
     <main>
@@ -43,8 +43,9 @@
                 </div>   
             </div>
             </header>
-        <div class="about-container">
-            <section class="about">
+
+        <article class="about">
+            <div class="about-container">
                 <header>
                     <h2>social battle royal game</h2>
                     <h3>what is sos?</h3>
@@ -58,10 +59,10 @@
                     Making the right decisions could be the
                     difference between life and death.
                 </p>
-            </section>
-        </div>
+            </div>
+        </article>
 
-        <section class="feature">
+        <article class="feature">
             <div class="feature-container">
                 <header>
                     <h2>features</h2>
@@ -77,9 +78,9 @@
                     <li><a href="/">impress the audience</a></li>
                 </ul>
             </div>
-        </section>
+        </article>
 
-        <section class="system-requirements">
+        <article class="system-requirements">
             <div class="system_requirements-container">
                 <header>
                     <h2>System requirements</h2>
@@ -102,9 +103,9 @@
                         AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</dd>
                 </dl>
             </div>
-        </section>
+        </article>
 
-        <section class="testemonials">
+        <article class="testemonials">
             <div class="testemonials-container">
                 <header>
                     <h2>press quotes</h2>
@@ -114,38 +115,38 @@
                 <p><a href="/">Read more testemonials</a></p>
                 <ul class="testemony-list">
                     <li class="testemony">
-                        <picture>
+                        <figure>
                             <img class="profile-picture" src="" alt="">
                             <h4>even lahti</h4>
                             <p class="job">PC Gamer</p>
                             <p class="quote">“One of my gaming highlights of the year.”</p>
                             <p class="date"><time datetime="2018-10-18">October 18, 2018</time></p>
-                        </picture>
+                        </figure>
                     </li>
                     <li class="testemony">
-                        <picture>
+                        <figure>
                             <img class="profile-picture" src="" alt="">
                             <h4>jada griffin</h4>
                             <p class="job">Nerdreactor</p>
                             <p class="quote">“The next big thing in the world of streaming and survival games.”
                             </p>
                             <p class="date"><time datetime="2018-12-21">December 21, 2018</time></p>
-                        </picture>
+                        </figure>
                     </li>
                     <li class="testemony">
-                        <picture>
+                        <figure>
                             <img class="profile-picture" src="" alt="">
                             <h4>aaron williams</h4>
                             <p class="job">Uproxx</p>
                             <p class="quote">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
                             <p class="date"><time datetime="2018-12-24">December 24, 2018</time></p>
-                        </picture>
+                        </figure>
                     </li>
                 </ul>
             </div>
-        </section>
+        </article>
 
-        <section class="suscribe">
+        <article class="suscribe">
             <div class="suscribe-container">
                 <header>
                     <h2>newsletter suscribe</h2>
@@ -158,7 +159,7 @@
                     <button type="submit">Suscribe now</button>
                 </form>
             </div>
-        </section>
+        </article>
     </main>
     <footer>
         <div class="footer">
