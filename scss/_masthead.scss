@@ -3,15 +3,15 @@
 .masthead {
     background-image: image('bg-masthead.svg');
     background-repeat: no-repeat;
-    max-width: 100%;
+    background-size: cover;
+    background-position: 40% 40%;
 }
 
 .masthead-container {
-    padding-block-start: 228px;
+    padding:  228px 16px 16px 16px;
     text-align: center;
     color: $text-colour;
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     margin: auto;
 }
@@ -20,7 +20,6 @@
     font-size: 33px;
     line-height: 33px;
     letter-spacing: 3px;
-    text-align: center;
 }
 
 .masthead-container h3 {
@@ -29,32 +28,36 @@
     letter-spacing: 2px;
 }
 
-.masthead-container p {
+.masthead-container button {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-}
-
-.masthead-container p {
     background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
     border-radius: 2.94008px;
+    padding: .5rem;
+    border: none;
 }
 
-.masthead-container a {
+
+.masthead-container button > a {
     color: #1A1917;
     text-decoration: none;
 }
 
-// .masthead-foot {
-//     padding-block-start: 100px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-// }
+.masthead-foot {
+    padding-block-start: 190px;
+    padding-block-end: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .the-story-link {
     text-decoration: none;
     color: #ffffff;
+    font-size: 12px;
+    line-height: 22px;
 }
+
