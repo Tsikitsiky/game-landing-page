@@ -65,3 +65,19 @@
     background-position: 50% 80%;
 }
 
+@media(min-width: 720px) {
+    .masthead-container h2 {
+        line-height: 80px;
+        font-size: 80px;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+
+    .masthead-container h3 {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 2px;
+        margin: 0;
+        margin-block-end: 28px;
+    }
+}
