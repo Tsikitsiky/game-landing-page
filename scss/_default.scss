@@ -4,6 +4,7 @@ body {
     position: relative;
     background-color: $colour-brand-black;
     color: $text-colour;
+    margin: 0;
 }
 
 span {
@@ -15,4 +16,9 @@ h3 {
     text-transform: uppercase;
     font-family: $font-header;
     font-weight: 400;
+}
+
+
+ul {
+    list-style: none;
 }

@@ -8,9 +8,3 @@ $colour-brand-black: #1a1917;
 @function image($filename) {
     @return url('../img/#{$filename}');
 }
-
-// @each $font in $fonts {
-//         family: 'bebas-neue';
-//         font-weight: 400;
-//         font-style: normal;
-// }

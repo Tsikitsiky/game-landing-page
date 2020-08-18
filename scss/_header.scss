@@ -4,11 +4,13 @@ body > header .header-container {
     display:  flex;
     // flex-direction: row;
      justify-content: space-between;
+     width: 100%;
     // margin: auto;
+    margin-block-start: 1rem;
 }
 
 .header-container form > * {
-    margin-left: 1rem;
+    margin-left: 1rem
 }
 
 h1 {
@@ -23,12 +25,9 @@ h1 {
     border: none;
 }
 
-#menu {
-   display: none;
-}
 
-.menu {
-    background-image: image('menu.svg');
-    background-repeat: no-repeat;
-    background-size: 24px;
+@media(min-width: 720px) {
+    body > header .header-container {
+        margin-block-start: 43px;
+    }
 }
