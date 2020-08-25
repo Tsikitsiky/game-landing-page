@@ -26,14 +26,38 @@ body {
 span {
   visibility: hidden; }
 
+a {
+  text-decoration: none; }
+
 h2,
 h3 {
   text-transform: uppercase;
   font-family: "Bebas Neue";
-  font-weight: 400; }
+  font-weight: 400;
+  margin: .5rem; }
+
+h2 {
+  font-size: 33px;
+  line-height: 33px;
+  letter-spacing: 3px; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-family: 'Bebas Neue';
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px; }
+
+div > header {
+  display: flex;
+  flex-direction: column-reverse; }
+
+p {
+  text-align: justify; }
 
 body > header .header-container {
   position: absolute;
@@ -71,16 +95,6 @@ h1 {
   align-items: center;
   justify-content: space-around;
   margin: auto; }
-
-.masthead-container h2 {
-  font-size: 33px;
-  line-height: 33px;
-  letter-spacing: 3px; }
-
-.masthead-container h3 {
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 2px; }
 
 .masthead-container button {
   font-family: 'Open Sans';
@@ -175,11 +189,11 @@ body > [type="checkbox"]:checked ~ nav {
     transform: none;
     transition: none;
     padding: 0; }
-  ul {
-    display: flex;
-    margin: 0; }
-  li {
-    margin-right: 1.5rem; }
+    body > nav ul {
+      display: flex;
+      margin: 0; }
+      body > nav ul li {
+        margin-right: 1.5rem; }
   .menu {
     background-image: url("../img/xbox.svg"), url("../img/union.svg");
     background-repeat: no-repeat, no-repeat;
@@ -197,14 +211,85 @@ body > [type="checkbox"]:checked ~ nav {
     transform: none;
     transition: none;
     padding: 0; }
-  ul {
-    display: flex;
-    margin: 0; }
-  li {
-    margin-right: 1.5rem; }
+    body > nav ul {
+      display: flex;
+      margin: 0; }
+      body > nav ul li {
+        margin-right: 1.5rem; }
   .menu {
     background-image: url("../img/xbox.svg"), url("../img/union.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 20% 50%, 80% 50%;
     background-size: 24px;
     padding: 0 .5rem; } }
+
+.about-container header {
+  border-block-end: 2px solid #ffffff; }
+
+.about-container {
+  padding: 1rem; }
+
+.about-container .gallery {
+  position: relative;
+  max-width: 275px;
+  padding-bottom: calc(100% * 273 / 249); }
+
+.about-container li {
+  position: absolute; }
+  .about-container li img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover; }
+
+.fig1 {
+  top: 0;
+  left: 0;
+  right: calc(100% * 24 / 249);
+  z-index: 3; }
+
+.fig2 {
+  top: 50%;
+  right: calc(100% * 12 / 249);
+  left: calc(100% * 12 / 249);
+  transform: scale(calc(249 / 273)) translateY(-50%);
+  transform-origin: 100% 0%;
+  z-index: 2; }
+
+.fig3 {
+  top: 20%;
+  left: 20%;
+  right: -7%;
+  z-index: 1; }
+
+.gallery::after {
+  content: " ";
+  background-image: url("../img/switch-about.svg");
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.about-container p {
+  padding-inline-start: 10%; }
+
+.feature-container li summary {
+  font-family: 'Bebas Neue';
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  text-transform: uppercase; }
+
+.feature-container {
+  padding-block-start: 82px;
+  padding-block-end: 85px;
+  padding-left: 40%;
+  background-color: rgba(8, 10, 11, 0.8); }
+
+.feature-container li {
+  margin-top: 43px; }
+
+.feature {
+  background-image: url("../img/bg-about-small.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50% 75%; }
