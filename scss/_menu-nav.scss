@@ -53,15 +53,13 @@ body > nav {
       transform: none;
       transition: none;
       padding: 0;
-      }
-
       ul {
         display: flex;
         margin: 0;
-      }
-
-      li {
-        margin-right: 1.5rem;
+        li {
+          margin-right: 1.5rem;
+        }
+        }
       }
 
       .menu {
@@ -84,16 +82,15 @@ body > nav {
       transform: none;
       transition: none;
       padding: 0;
-      }
-
       ul {
         display: flex;
         margin: 0;
+        li {
+          margin-right: 1.5rem;
+          }
+        }
       }
 
-      li {
-        margin-right: 1.5rem;
-      }
 
       .menu {
         background-image: image('xbox.svg'),

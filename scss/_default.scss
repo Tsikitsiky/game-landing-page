@@ -11,14 +11,42 @@ span {
     visibility: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 h2,
 h3 {
     text-transform: uppercase;
     font-family: $font-header;
     font-weight: 400;
+    margin: .5rem;
 }
 
+h2 {
+    font-size: 33px;
+    line-height: 33px;
+    letter-spacing: 3px;
+}
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+div > header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+p {
+    text-align: justify;
 }

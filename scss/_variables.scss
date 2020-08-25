@@ -4,6 +4,7 @@ $font-fallbacks: Arial, Helvetica, sans-serif;
 $text-colour: #ffffff;
 $break-point: 1140px;
 $colour-brand-black: #1a1917;
+$colour-orange: #FFB548;
 
 @function image($filename) {
     @return url('../img/#{$filename}');
