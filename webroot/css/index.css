@@ -59,6 +59,19 @@ div > header {
 p {
   text-align: justify; }
 
+@media (min-width: 720px) {
+  h2 {
+    line-height: 80px;
+    font-size: 80px;
+    letter-spacing: 3px;
+    margin: 0; }
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-block-end: 28px; } }
+
 body > header .header-container {
   position: absolute;
   display: flex;
@@ -292,3 +305,10 @@ body > [type="checkbox"]:checked ~ nav {
   background-repeat: no-repeat;
   background-position: 0 0, -100px 50%;
   background-size: cover, auto 100%; }
+
+@media (min-width: 720px) {
+  .feature {
+    background-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0.8) 50%, black 100%), url("../img/bg-features.png");
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 50%;
+    background-size: cover, auto 100%; } }
