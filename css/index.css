@@ -282,14 +282,13 @@ body > [type="checkbox"]:checked ~ nav {
 .feature-container {
   padding-block-start: 82px;
   padding-block-end: 85px;
-  padding-left: 40%;
-  background-color: rgba(8, 10, 11, 0.8); }
+  padding-left: 40%; }
 
 .feature-container li {
   margin-top: 43px; }
 
 .feature {
-  background-image: url("../img/bg-about-small.png");
+  background-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.1) 34%, rgba(0, 0, 0, 0.8) 40%, black 100%), url("../img/bg-features.png");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: 50% 75%; }
+  background-position: 0 0, -100px 50%;
+  background-size: cover, auto 100%; }
