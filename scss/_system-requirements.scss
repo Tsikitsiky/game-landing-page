@@ -1,0 +1,87 @@
+.system-requirements {
+    background-image:
+                    radial-gradient(58.54% 41.14% at 50.49% 75.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080A0B 100%),
+                    image('bg-system-req.png');
+    background-position: 
+                        0 0,
+                        bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block-end: 200px;
+}
+
+.system_requirements-container {
+    padding-block-start: 69px;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.system_requirements-container ul {
+    display: grid;
+    grid-template-areas: "ds processor"
+                         "memory storage"
+                         "graphics graphics";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
+}
+
+.system_requirements-container b {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    font-family: $font-header;
+    color: $colour-orange;
+}
+
+.ds {
+    grid-area: ds;
+}
+
+.processor {
+    grid-area: processor;
+}
+
+.memory {
+    grid-area: memory;
+}
+
+.storage {
+    grid-area: storage;
+}
+
+.graphics {
+    grid-area: graphics;
+}
+
+.system_requirements-container li {
+    padding: 1rem;
+    border: 0.504234px solid #979797;
+}
+
+
+@media(min-width: 720px) {
+    .system-requirements {
+        background-image:
+        radial-gradient(29.54% 65.14% at 66.49% 84.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080A0B 100%),
+                        image('bg-system-req.png');
+        background-position: 
+                            0 0,
+                            right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-block-end: 0;
+    }   
+
+    .system_requirements-container ul {
+        padding-inline-end: 60%;
+        padding-block-start: 70px;
+        padding-block-end: 90px;
+        padding-inline-start: 60px;
+        max-width: 573.2px;
+        max-height: 400.69px;
+    }
+
+}
