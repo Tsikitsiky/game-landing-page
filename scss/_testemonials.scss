@@ -1,0 +1,106 @@
+.testemonials {
+    background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
+}
+
+.testemonials-container {
+    padding: 1rem;
+    padding-block-start: 36px;
+    text-align: center;
+}
+
+.testemonials-container header {
+    text-align: left;
+}
+
+.testemonials-container button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 2.94008px;
+    padding: .5rem;
+    border: none;
+}
+
+
+.testemonials-container button > a {
+    color: #1A1917;
+    text-decoration: none;
+}
+
+.testemony {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    background-image: image('twitter.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 5%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.job {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.5;
+}
+
+.profile {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 40px;
+    height: 40px;
+}
+
+.testemonials-container h4 {
+    font-family: $font-header;
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: $colour-orange;
+    margin: 0;
+}
+
+.date {
+    font-size: 12px;
+    line-height: 16px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+@media(min-width: 720px) {
+    .testemonials-container {
+        position: relative;
+        text-align: left;
+        padding-block-start: 303px;
+        padding-inline-start: 118px;
+        padding-block-end: 269px;
+        padding-inline-end: 50%;
+    }
+
+    .testemonials-container li {
+        position: absolute;
+    }
+
+    .even-lathi {
+        top: 20%;
+        left: 70%;
+    }
+
+    .jada-griffin {
+        top: 45%;
+        left: 60%;
+        right: 10%;
+    }
+
+    .aaron-williams {
+        top: 70%;
+        left: 70%;
+    }
+}
