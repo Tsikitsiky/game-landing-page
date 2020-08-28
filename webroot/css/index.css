@@ -306,6 +306,9 @@ body > [type="checkbox"]:checked ~ nav {
   background-position: 0 0, -100px 50%;
   background-size: cover, auto 100%; }
 
+summary::-webkit-details-marker {
+  display: none; }
+
 @media (min-width: 720px) {
   .feature {
     background-image: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0.1) 15%, rgba(0, 0, 0, 0.8) 60%, black 100%), url("../img/bg-features.png");
@@ -447,6 +450,12 @@ body > [type="checkbox"]:checked ~ nav {
     padding-inline-start: 118px;
     padding-block-end: 269px;
     padding-inline-end: 50%; }
+  .profile {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 66px;
+    height: 65px; }
   .testemonials-container li {
     position: absolute; }
   .even-lathi {
@@ -459,3 +468,66 @@ body > [type="checkbox"]:checked ~ nav {
   .aaron-williams {
     top: 70%;
     left: 70%; } }
+
+.suscribe {
+  background-image: url("../img/bg-suscribe.png");
+  background-repeat: no-repeat;
+  background-position: -90% 20%;
+  background-size: 70% 70%; }
+
+.suscribe-container {
+  padding: 1rem;
+  padding-block-start: 39px; }
+
+.suscribe-container header,
+.suscribe-container p {
+  padding-inline-start: 35%; }
+
+.suscribe-container button {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 2.94008px;
+  padding: .5rem;
+  border: none;
+  width: 290px; }
+
+.email {
+  width: 290px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 2.94008px; }
+  .email input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #FFB548; }
+
+.suscribe-container form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+  padding-block-start: 65px; }
+
+@media (min-width: 720px) {
+  .suscribe {
+    background-image: url("../img/bg-suscribe.png"), radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+    background-repeat: no-repeat;
+    background-position: 10% 20%, 0 0;
+    background-size: 300px 400px, 100%; }
+  .suscribe-container {
+    padding: 2rem;
+    padding-inline-start: 40%; }
+  .suscribe-container header,
+  .suscribe-container p {
+    padding-inline-start: 0; }
+  .suscribe-container form {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    column-gap: 1rem;
+    padding-block-start: 65px; } }
