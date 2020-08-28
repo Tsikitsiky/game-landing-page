@@ -31,6 +31,10 @@
         auto 100%;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+}
+
 @media(min-width: 720px) {
     .feature {
         background-image: 
