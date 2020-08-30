@@ -1,0 +1,121 @@
+.footer nav {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.873968px solid rgba($color: #ffffff, $alpha: 0.5);
+    p {
+        background-image: image('logo-sos.svg');
+        background-repeat: no-repeat;
+        align-self: center;
+        background-size: 100%;
+    }
+}
+
+.footer-menu,
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    li {
+        margin: .5rem;
+        a {
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.social-media li {
+    width: 30px;
+    height: 20px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+}
+
+.fb {
+    background-image: image('facebook.svg');
+}
+
+.tw {
+    background-image: image('twitter-white.svg');
+}
+
+.yt {
+    background-image: image('youtub.svg');
+}
+
+.ms {
+    background-image: image('twitch.svg');
+}
+
+.about-the-page {
+    padding-block-start: 1rem;
+    p {
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin: 1rem;
+        a {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 34px;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+@media(min-width: 720px) {
+    .footer {
+        max-width: $break-point;
+        margin: auto;
+    }
+
+    .footer nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+        ul {
+            padding: 0;
+           
+        }
+        
+        p {
+            margin: 0;
+        }
+    }
+
+    .about-the-page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ul {
+            flex-direction: row;
+            margin: 0;
+            justify-content: space-between;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
