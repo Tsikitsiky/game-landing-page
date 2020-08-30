@@ -82,6 +82,8 @@
         padding-inline-start: 118px;
         padding-block-end: 269px;
         padding-inline-end: 50%;
+        max-width: $break-point;
+        margin: auto;
     }
 
     .profile {
