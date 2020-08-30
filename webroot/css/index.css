@@ -86,14 +86,17 @@ h1 {
   padding: 0;
   margin: 0;
   background-image: url("../img/logo-sos.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 33px 33px; }
 
 #language {
   border: none; }
 
 @media (min-width: 720px) {
   body > header .header-container {
-    margin-block-start: 43px; } }
+    margin-block-start: 43px; }
+  h1 {
+    background-size: 55px 55px; } }
 
 .masthead {
   background-image: url("../img/bg-masthead.svg");
@@ -261,7 +264,7 @@ body > [type="checkbox"]:checked ~ nav {
   z-index: 3; }
 
 .fig2 {
-  top: 50%;
+  top: 45%;
   right: calc(100% * 12 / 249);
   left: calc(100% * 12 / 249);
   transform: scale(calc(249 / 273)) translateY(-50%);
@@ -269,9 +272,9 @@ body > [type="checkbox"]:checked ~ nav {
   z-index: 2; }
 
 .fig3 {
-  top: 20%;
-  left: 20%;
-  right: -7%;
+  top: 12%;
+  left: 35%;
+  right: 0;
   z-index: 1; }
 
 .gallery::after {
@@ -548,7 +551,8 @@ summary::-webkit-details-marker {
     background-image: url("../img/logo-sos.svg");
     background-repeat: no-repeat;
     align-self: center;
-    background-size: 100%; }
+    padding: 1rem;
+    background-size: 50px; }
 
 .footer-menu,
 .social-media {
@@ -615,7 +619,8 @@ summary::-webkit-details-marker {
 @media (min-width: 720px) {
   .footer {
     max-width: 1140px;
-    margin: auto; }
+    margin: auto;
+    padding-block-end: 2rem; }
   .footer nav {
     display: flex;
     flex-direction: row;
