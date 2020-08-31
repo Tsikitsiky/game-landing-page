@@ -243,11 +243,11 @@ body > [type="checkbox"]:checked ~ nav {
   border-block-end: 2px solid #ffffff; }
 
 .about-container {
-  padding: 1rem; }
+  padding: 1rem;
+  position: relative; }
 
 .about-container .gallery {
   position: relative;
-  max-width: 275px;
   padding-bottom: calc(100% * 273 / 249); }
 
 .about-container li {
@@ -255,7 +255,8 @@ body > [type="checkbox"]:checked ~ nav {
   .about-container li img {
     max-width: 100%;
     display: block;
-    object-fit: cover; }
+    object-fit: cover;
+    border-radius: 5px; }
 
 .fig1 {
   top: 0;
@@ -264,7 +265,7 @@ body > [type="checkbox"]:checked ~ nav {
   z-index: 3; }
 
 .fig2 {
-  top: 45%;
+  top: 50%;
   right: calc(100% * 12 / 249);
   left: calc(100% * 12 / 249);
   transform: scale(calc(249 / 273)) translateY(-50%);
@@ -286,6 +287,30 @@ body > [type="checkbox"]:checked ~ nav {
 
 .about-container p {
   padding-inline-start: 10%; }
+
+.about-container nav {
+  position: absolute;
+  top: 94%;
+  left: 25%;
+  z-index: 9999; }
+
+@media (min-width: 720px) {
+  .about-container {
+    padding: 118px;
+    padding-block-start: 201px;
+    padding-block-end: 148px;
+    display: grid;
+    grid-template-areas: "head ul" "p1 ul" "p2 ul";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem; }
+  .about-container header {
+    grid-area: head; }
+  .about-container p:first-of-type {
+    grid-area: p1; }
+  .about-container p:nth-of-type(2) {
+    grid-area: p2; }
+  .gallery {
+    grid-area: ul; } }
 
 .feature-container li summary {
   font-family: 'Bebas Neue';
