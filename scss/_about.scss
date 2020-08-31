@@ -4,11 +4,12 @@
 
 .about-container {
     padding: 1rem;
+    position: relative;
 }
 
 .about-container .gallery {
     position: relative;
-    max-width: 275px;
+    //max-width: 275px;
     //padding: 10%;
     padding-bottom: calc(100% * 273 / 249);
 }
@@ -20,6 +21,7 @@
         display: block;
         //height: calc(100% * 1.13);
         object-fit: cover;
+        border-radius: 5px;
     }
 }
 
@@ -31,7 +33,7 @@
 }
 
 .fig2 {
-	top: 45%;
+	top: 50%;
 	right: calc(100% * 12 / 249);
 	left: calc(100% * 12 / 249);
 	transform: scale(calc(249 / 273)) translateY(-50%);
@@ -58,4 +60,41 @@
 
 .about-container p {
     padding-inline-start: 10%;
+}
+
+.about-container nav {
+    position: absolute;
+    top: 94%;
+    left: 25%;
+    z-index: 9999;
+}
+
+@media(min-width: 720px) {
+    .about-container {
+        padding: 118px;
+        padding-block-start: 201px;
+        padding-block-end: 148px;
+        display: grid;
+        grid-template-areas: "head ul"
+                             "p1 ul"
+                             "p2 ul";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .about-container header {
+        grid-area: head;
+    }
+
+    .about-container p:first-of-type {
+        grid-area: p1;
+    }
+
+    .about-container p:nth-of-type(2) {
+        grid-area: p2;
+    }
+
+    .gallery {
+        grid-area: ul;
+    }
 }
