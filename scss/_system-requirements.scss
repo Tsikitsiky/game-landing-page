@@ -65,18 +65,18 @@
 @media(min-width: 720px) {
     .system-requirements {
         background-image:
-        radial-gradient(29.54% 65.14% at 66.49% 84.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080A0B 100%),
+        radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%),
                         image('bg-system-req.png');
         background-position: 
                             0 0,
                             right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover, 900px;
         padding-block-end: 0;
     }   
 
     .system_requirements-container ul {
-        padding-inline-end: 60%;
+        padding-inline-end: 45%;
         padding-block-start: 70px;
         padding-block-end: 90px;
         padding-inline-start: 60px;

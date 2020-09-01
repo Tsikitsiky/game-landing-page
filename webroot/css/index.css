@@ -239,6 +239,12 @@ body > [type="checkbox"]:checked ~ nav {
     background-size: 24px;
     padding: 0 .5rem; } }
 
+.about {
+  background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%), linear-gradient(rgba(15, 15, 15, 0.9), rgba(15, 15, 15, 0.9)), url("../img/bg-about.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 0 0, 0 0;
+  background-size: cover, cover, cover; }
+
 .about-container header {
   border-block-end: 2px solid #ffffff; }
 
@@ -280,8 +286,13 @@ body > [type="checkbox"]:checked ~ nav {
 
 .gallery::after {
   content: " ";
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 95%;
+  position: absolute;
   background-image: url("../img/switch-about.svg");
-  background-size: 2rem;
+  background-size: 45px 24px;
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -297,12 +308,21 @@ body > [type="checkbox"]:checked ~ nav {
 @media (min-width: 720px) {
   .about-container {
     padding: 118px;
-    padding-block-start: 201px;
+    padding-block-start: 209px;
     padding-block-end: 148px;
     display: grid;
     grid-template-areas: "head ul" "p1 ul" "p2 ul";
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem; }
+    .about-container .column2 {
+      position: relative; }
+      .about-container .column2 nav {
+        position: absolute;
+        top: 90%;
+        left: 25%;
+        z-index: 9999; }
+        .about-container .column2 nav .progress-bar-about a {
+          padding: 0.25rem; }
   .about-container header {
     grid-area: head; }
   .about-container p:first-of-type {
@@ -310,7 +330,18 @@ body > [type="checkbox"]:checked ~ nav {
   .about-container p:nth-of-type(2) {
     grid-area: p2; }
   .gallery {
-    grid-area: ul; } }
+    grid-area: ul; }
+  .gallery::after {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 100%;
+    position: absolute;
+    background-image: url("../img/switch-about.svg");
+    background-size: 45px 24px;
+    background-repeat: no-repeat;
+    background-position: center; } }
 
 .feature-container li summary {
   font-family: 'Bebas Neue';
@@ -392,13 +423,13 @@ summary::-webkit-details-marker {
 
 @media (min-width: 720px) {
   .system-requirements {
-    background-image: radial-gradient(29.54% 65.14% at 66.49% 84.05%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 46.19%, #080A0B 100%), url("../img/bg-system-req.png");
+    background-image: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%), url("../img/bg-system-req.png");
     background-position: 0 0, right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover, 900px;
     padding-block-end: 0; }
   .system_requirements-container ul {
-    padding-inline-end: 60%;
+    padding-inline-end: 45%;
     padding-block-start: 70px;
     padding-block-end: 90px;
     padding-inline-start: 60px;
@@ -409,7 +440,10 @@ summary::-webkit-details-marker {
     margin: auto; } }
 
 .testemonials {
-  background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%); }
+  background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%), url("../img/bg-testemonials.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
 
 .testemonials-container {
   padding: 1rem;
@@ -503,10 +537,10 @@ summary::-webkit-details-marker {
     left: 70%; } }
 
 .suscribe {
-  background-image: url("../img/bg-suscribe.png");
+  background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url("../img/bg-suscribe.png"), linear-gradient(black, black);
   background-repeat: no-repeat;
-  background-position: -90% 20%;
-  background-size: 70% 70%; }
+  background-position: -90% 20%, -90% 30%, 0 0;
+  background-size: 70% 65%, 70% 60%, cover; }
 
 .suscribe-container {
   padding: 1rem;
@@ -532,26 +566,37 @@ summary::-webkit-details-marker {
 .email {
   width: 290px;
   background-color: rgba(255, 255, 255, 0.08);
-  border-radius: 2.94008px; }
+  border-radius: 2.94008px;
+  padding-inline-start: 20px; }
+  .email input::placeholder {
+    color: #FFB548;
+    font-size: 14px;
+    line-height: 19px; }
   .email input {
     background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: #FFB548; }
+    border: none; }
+  .email label {
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5; }
 
 .suscribe-container form {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   row-gap: 1rem;
   padding-block-start: 65px; }
 
 @media (min-width: 720px) {
   .suscribe {
-    background-image: url("../img/bg-suscribe.png"), radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+    background-color: #080A0B;
+    background-image: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url("../img/bg-suscribe.png");
     background-repeat: no-repeat;
-    background-position: 10% 20%, 0 0;
-    background-size: 300px 400px, 100%; }
+    background-position: 8% 15%, 10% 20%;
+    background-size: 400px 500px, 300px 400px; }
   .suscribe-container {
     padding: 2rem;
     padding-inline-start: 40%;
@@ -561,12 +606,33 @@ summary::-webkit-details-marker {
   .suscribe-container p {
     padding-inline-start: 0; }
   .suscribe-container form {
-    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
     column-gap: 1rem;
-    padding-block-start: 65px; } }
+    padding-block-start: 65px; }
+  .email {
+    width: 366px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 2.94008px;
+    padding-inline-start: 20px; }
+    .email input::placeholder {
+      color: #FFB548;
+      font-size: 18px;
+      line-height: 25px; }
+    .email input {
+      background-color: rgba(0, 0, 0, 0);
+      border: none; }
+    .email label {
+      font-size: 12px;
+      line-height: 16px;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.5; }
+  .suscribe-container button {
+    width: 260px;
+    height: 60px; } }
 
 .footer nav {
   display: flex;
