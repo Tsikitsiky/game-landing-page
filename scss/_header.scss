@@ -4,7 +4,8 @@ body > header .header-container {
     display:  flex;
     // flex-direction: row;
      justify-content: space-between;
-     width: 100%;
+    width: 100%;
+    top: 0.1%;
     // margin: auto;
     margin-block-start: 1rem;
 }
@@ -19,6 +20,7 @@ h1 {
     background-image: image('logo-sos.svg');
     background-repeat: no-repeat;
     background-size: 33px 33px;
+    background-position: center;
 }
 
 
@@ -36,10 +38,12 @@ select {
 
 @media(min-width: 720px) {
     body > header .header-container {
-        margin-block-start: 43px;
+        max-width: 1044px;
+        margin: auto;
+        top: 0.5%;
     }
 
     h1 {
-        background-size: 55px 55px;
+        background-size: 43px 43px;
     }
 }
