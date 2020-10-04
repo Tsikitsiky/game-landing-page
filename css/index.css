@@ -102,7 +102,7 @@ select {
 
 @media (min-width: 720px) {
   body > header .header-container {
-    max-width: 1044px;
+    max-width: 1244px;
     margin: auto;
     top: 0.5%; }
   h1 {
@@ -167,7 +167,7 @@ select {
     margin: 0;
     margin-block-end: 28px; } }
 
-body > nav {
+body > header nav {
   padding: 1rem;
   position: absolute;
   z-index: 3;
@@ -176,7 +176,15 @@ body > nav {
   bottom: 0;
   transform: translateX(-110%);
   transition: transform 0.3s; }
-  body > nav a {
+  body > header nav ul {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 5px; }
+  body > header nav a {
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
@@ -186,7 +194,7 @@ body > nav {
     text-align: right;
     letter-spacing: 0.1em; }
 
-body > [type="checkbox"]:checked ~ nav {
+[type="checkbox"]:checked ~ nav {
   transform: translateX(0); }
 
 #menu {
@@ -206,19 +214,17 @@ body > [type="checkbox"]:checked ~ nav {
   padding-inline-start: 1rem; }
 
 @media (min-width: 720px) {
-  body > nav {
-    top: 0.5%;
-    left: 15%;
-    right: 0;
+  body > header nav {
+    position: relative;
     bottom: auto;
     width: auto;
     transform: none;
     transition: none;
     padding: 0; }
-    body > nav ul {
+    body > header nav ul {
       display: flex;
       margin: 0; }
-      body > nav ul li {
+      body > header nav ul li {
         margin-right: 1.5rem; }
   .menu {
     background-image: url("../img/xbox.svg"), url("../img/union.svg");
@@ -228,19 +234,16 @@ body > [type="checkbox"]:checked ~ nav {
     padding: 0 .5rem; } }
 
 @media (min-width: 1020px) {
-  body > nav {
-    top: 0.5%;
-    left: 25%;
-    right: 0;
-    bottom: auto;
+  body > header nav {
+    position: relative;
     width: auto;
     transform: none;
     transition: none;
     padding: 0; }
-    body > nav ul {
+    body > header nav ul {
       display: flex;
       margin: 0; }
-      body > nav ul li {
+      body > header nav ul li {
         margin-right: 1.5rem; }
   .menu {
     background-image: url("../img/xbox.svg"), url("../img/union.svg");
@@ -289,9 +292,11 @@ body > [type="checkbox"]:checked ~ nav {
   z-index: 2; }
 
 .fig3 {
-  top: 12%;
-  left: 35%;
+  top: 50%;
   right: 0;
+  left: calc(100% * 48 / 249);
+  transform: scale(calc(249 / 273)) translateY(-50%);
+  transform-origin: 100% 0%;
   z-index: 1; }
 
 .gallery::after {
@@ -683,6 +688,9 @@ summary::-webkit-details-marker {
   .suscribe-container button {
     width: 260px;
     height: 60px; } }
+
+body > footer {
+  background-color: #080A0B; }
 
 .footer nav {
   display: flex;
