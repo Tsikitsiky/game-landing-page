@@ -53,10 +53,16 @@
 
 
 .fig3 { 
-    top: 12%;
-    left: 35%;
-    right: 0;
-    z-index: 1;
+    // top: 12%;
+    // left: 35%;
+    // right: 0;
+    // z-index: 1;
+    top: 50%;
+	right: 0;
+	left: calc(100% * 48 / 249);
+	transform: scale(calc(249 / 273)) translateY(-50%);
+	transform-origin: 100% 0%;
+	z-index: 1;
 } 
 
 .gallery::after {
